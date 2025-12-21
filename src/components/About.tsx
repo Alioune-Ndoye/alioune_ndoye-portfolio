@@ -45,14 +45,14 @@ export function About() {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-24 h-24 border-2 border-primary/20 rounded-lg"></div>
               <img
-                src="/profile.jpg"
+                src="/profile.png"
                 alt="Professional developer portrait"
                 className="w-full h-96 object-cover rounded-lg shadow-2xl bg-muted/10"
               />
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-lg backdrop-blur-sm"></div>
             </div>
             <div className="text-center mt-6">
-              <h4 className="text-xl text-primary">Ali Ndoye</h4>
+              <h4 className="text-xl text-primary">Alioune Ndoye</h4>
             </div>
           </motion.div>
 
