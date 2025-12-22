@@ -45,7 +45,7 @@ export function About() {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-24 h-24 border-2 border-primary/20 rounded-lg"></div>
               <img
-                src="/profile.png"
+                src="/ali.jpg"
                 alt="Professional developer portrait"
                 className="w-full h-96 object-cover rounded-lg shadow-2xl bg-muted/10"
               />
