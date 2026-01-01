@@ -12,10 +12,12 @@ import {
   type CarouselApi
 } from "./ui/carousel";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Autoplay from "embla-carousel-autoplay";
 import { ImageWithFallback } from "./ui/image-with-fallback";
 
 export function Projects() {
+  const navigate = useNavigate();
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -77,6 +79,10 @@ export function Projects() {
       setCurrent(api.selectedScrollSnap() + 1);
     });
   }, [api]);
+
+  const handleViewAllProjects = () => {
+    navigate("/projects");
+  };
 
   return (
     <section id="projects" className="py-24 bg-muted/20">
@@ -257,7 +263,7 @@ export function Projects() {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <Button variant="outline" size="lg" className="group">
+          <Button variant="outline" size="lg" className="group" onClick={handleViewAllProjects}>
             View All Projects
             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>

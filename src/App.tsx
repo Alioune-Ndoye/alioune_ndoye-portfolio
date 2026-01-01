@@ -1,22 +1,35 @@
-import { Hero } from "./components/Hero";
-import { About } from "./components/About";
-import { Skills } from "./components/Skills";
-import { NowPlaying } from "@/components/NowPlaying";
-import { Projects } from "./components/Projects";
-import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
+import "./index.css";
 
-export default function App() {
-  return (
-    <div className="min-h-screen bg-background text-foreground">
-      {/* Navigation could be added here */}
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <NowPlaying />
-      <Contact />
-      <Footer />
-    </div>
-  );
-}
+
+import { createRoot } from "react-dom/client";
+import { Toaster as Sonner, Toaster } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from "./pages/Index";
+import ProjectsPage from "./pages/ProjectsPage";
+import NotFound from "./pages/NotFound";
+
+
+const queryClient = new QueryClient();
+
+export const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
+
+createRoot(document.getElementById("root")!).render(<App />);
+
+export default App

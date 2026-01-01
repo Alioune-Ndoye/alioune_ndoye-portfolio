@@ -28,7 +28,7 @@ export function Footer() {
             className="flex justify-end gap-4"
           >
             <motion.a
-              href="https://github.com"
+              href="https://github.com/Alioune-Ndoye"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-lg bg-muted hover:bg-accent transition-colors"
@@ -38,7 +38,7 @@ export function Footer() {
               <Github className="w-5 h-5" />
             </motion.a>
             <motion.a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/alioune-ndoye-378a301a7/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-lg bg-muted hover:bg-accent transition-colors"
@@ -48,7 +48,7 @@ export function Footer() {
               <Linkedin className="w-5 h-5" />
             </motion.a>
             <motion.a
-              href="mailto:hello@example.com"
+              href="mailto:ali_ndoye@yahoo.com"
               className="p-3 rounded-lg bg-muted hover:bg-accent transition-colors"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
