@@ -1,4 +1,4 @@
-# 🇯🇵 Japanese Portfolio Website  
+# Portfolio Website  
 
 A modern personal portfolio built with **React**, **TypeScript**, **Vite**, and **shadcn/ui**.  
 This project showcases my skills, projects, and experiences in a clean, responsive, and minimal design with Japanese-inspired aesthetics.  
@@ -8,8 +8,7 @@ This project showcases my skills, projects, and experiences in a clean, responsi
 ## 🚀 Features  
 
 - ⚡ **Vite + React + TypeScript** for fast development and type safety  
-- 🎨 **shadcn/ui** + **Tailwind CSS** for modern, accessible UI components  
-- 🌙 Dark/Light mode toggle  
+- 🎨 **shadcn/ui** + **Tailwind CSS** for modern, accessible UI components   
 - 📱 Fully responsive design  
 - 🗂️ Projects showcase with images, descriptions, and external links  
 - 📝 About, Skills, and Contact sections  
@@ -25,7 +24,7 @@ This project showcases my skills, projects, and experiences in a clean, responsi
 - **Styling:** Tailwind CSS  
 - **Animations:** Framer Motion  
 - **Icons:** Lucide-react  
-- **Deployment:** Vercel / Netlify (recommended)  
+- **Deployment:** Vercel  
 
 ---
 
