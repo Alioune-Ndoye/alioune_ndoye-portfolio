@@ -72,7 +72,7 @@ export function About() {
             <p className="text-muted-foreground leading-relaxed">
               My path in development began with curiosity and has evolved
               through passion, perseverance, and an unwavering commitment to
-              excellence. I believe that great software isn't just functional—
+              excellence. I believe that great software isn't just functional:
               it's beautiful, intuitive, and meaningful.
             </p>
 
